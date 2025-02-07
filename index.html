@@ -19,7 +19,9 @@
 <div id='crmWebToEntityForm' class='zcwf_lblLeft crmWebToEntityForm' style= 'color: &#x23;000000;max-width: 800px;'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
      <META HTTP-EQUIV ='content-type' CONTENT='text/html;charset=SHIFT-JIS'>
-     
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">   
   <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js'></script>
   
   <style>
@@ -114,39 +116,35 @@
     margin: 0px;
   }
   
-  .formsubmit.zcwf_button{
-    color: white !important;
-    background: transparent linear-gradient(0deg, #0a786c 0%, #0a786c 100%);
-  }
-
+  
   #formsubmit{
     padding: 4px 30px;
     position: left;
   }
-
+  
   #crmWebToEntityForm{
     background:#F7F7F7;
   }
-
   
-
+  
+  
   #crmWebToEntityForm.zcwf_lblLeft {
     width:100%;
     padding: 10px 25px;
     margin: 0 auto;
     box-sizing: border-box;
   }
-
+  
   #crmWebToEntityForm.zcwf_lblLeft * {
     box-sizing: border-box;
   }
-
+  
   #crmWebToEntityForm{text-align: left;}
-
+  
   #crmWebToEntityForm * {
     direction: ltr;
   }
-
+  
   .zcwf_topbackground{
     background:#0a786c;
     width:100%;
@@ -155,168 +153,176 @@
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
   }
-
+  
   .zcwf_title{
     font-size:24px;
   }
-
+  
   .zcwf_lblLeft .zcwf_title {
     word-wrap: break-word;
     padding: 6px 6px 6px;
     font-weight:bold }.zcwf_lblLeft.cpT_primaryBtn:hover{
-    background: linear-gradient(#02acff 0,#006be4 100%) no-repeat padding-box !important;
-    box-shadow: 0 -2px 0 0 #0159b9 inset !important;
-    border: 0 !important;
-    color: #fff !important;
-    outline: 0 !important;
-  }
+      background: linear-gradient(#02acff 0,#006be4 100%) no-repeat padding-box !important;
+      box-shadow: 0 -2px 0 0 #0159b9 inset !important;
+      border: 0 !important;
+      color: #fff !important;
+      outline: 0 !important;
+    }
+    
+    
+    .zcwf_text{
+      font-size:16px;
+      margin-top:14px;
+    }
+    
+    .zcwf_Required{
+      font-size:12px;
+      background: #cf566b;
+      color:white;
+      width:fit-content;
+      padding:2px 8px 0px;
+      border-top-left-radius:6px;
+      border-top-right-radius:6px;
+    }
+    
+    .zcwf_NotRequired{
+      font-size:12px;
+      background:#c0c6cc;
+      border-bottom:none;
+      width:fit-content;
+      padding:2px 8px 0px;
+      border-top-left-radius:6px;
+      border-top-right-radius:6px;
+    }
+    
+    .zcwf_lblLeft .zcwf_col_fld input[type=text], input[type=password] {
+      width: 100%;
+      border: 1px solid #c0c6cc !important;
+      resize: vertical;
+      border-radius: 2px;
+      float: left;
+      height:48px;
+      font-size :20px;
+    }
+    
+    .zcwf_col_fld textarea{
+      width:100%;
+      height:125px;
+      border:1px solid #c0c6cc !important;
+      resize: vertical;
+      border-radius:2px;
+      float:left;
+      font-size:20px;
+    }
+    
+    .zcwf_lblLeft .zcwf_col_lab {
+      width: 30%;
+      word-break: break-word;
+      padding: 0px 6px 0px;
+      margin-right: 10px;
+      margin-top: 16px;
+      float: left;
+      min-height: 1px;
+    }
+    
+    .zcwf_lblLeft .zcwf_col_fld {
+      float: left;
+      width: 68%;
+      padding: 0px 6px 0px;
+      position: relative;
+      margin-top: 5px;
+    }
+    
+    .zcwf_lblLeft .zcwf_privacy{padding: 6px;}
+    
+    .zcwf_lblLeft .wfrm_fld_dpNn{display: none;}
+    
+    .dIB{display: inline-block;}
+    
+    .zcwf_lblLeft .zcwf_col_fld_slt {
+      width: 100%;
+      height:48px;
+      border: 1px solid #ccc;
+      background: #fff;
+      border-radius: 2px;
+      font-size: 12px;
+      float: left;
+      resize: vertical;
+      padding: 2px 5px;
+      font-size:20px;
+    }
+    
+    .zcwf_lblLeft .zcwf_row:after, .zcwf_lblLeft .zcwf_col_fld:after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+    
+    .zcwf_lblLeft .zcwf_col_help {
+      float: left;
+      margin-left: 7px;
+      font-size: 12px;
+      max-width: 35%;
+      word-break: break-word;
+    }
+    
+    .zcwf_lblLeft .zcwf_help_icon {
+      cursor: pointer;
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      background: #fff;
+      border: 1px solid #c0c6cc;
+      color: #c1c1c1;
+      text-align: center;
+      font-size: 11px;
+      line-height: 16px;
+      font-weight: bold;
+      border-radius: 50%;
+    }
+    
+    .zcwf_lblLeft .zcwf_row {margin: 30px 0px;}
+    .zcwf_lblLeft .formsubmit {
+      margin-right: 5px;
+      margin-left:40px;
+      cursor: pointer;
+      color: #213743;
+      font-size: 12px;
+    }
+    
+    .zcwf_lblLeft .zcwf_privacy_txt {
+      width: 90%;
+      color: rgb(0, 0, 0);
+      font-size: 12px;
+      font-family: Arial;
+      display: inline-block;
+      vertical-align: top;
+      color: #213743;
+      padding-top: 2px;
+      margin-left: 6px;
+    }
+    
+    .zcwf_lblLeft .zcwf_button{
+      font-size: 16px;
+      color: #213743; 
+      border: 1px solid #c0c6cc;
+      padding: 3px 9px;
+      border-radius: 4px;
+      cursor: pointer;
+      width:200px;
+      height:50px;
+      /* max-width: 180px; */
+      background:#dcdcdc;
+      /* overflow: hidden; */
+      /* text-overflow: ellipsis; */
+      white-space: nowrap;
+    }
 
-
-  .zcwf_text{
-    font-size:16px;
-    margin-top:14px;
-  }
-
-  .zcwf_Required{
-    font-size:12px;
-    background: #cf566b;
-    color:white;
-    width:fit-content;
-    padding:2px 8px 0px;
-    border-top-left-radius:6px;
-    border-top-right-radius:6px;
-  }
-
-  .zcwf_NotRequired{
-    font-size:12px;
-    background:#c0c6cc;
-    border-bottom:none;
-    width:fit-content;
-    padding:2px 8px 0px;
-    border-top-left-radius:6px;
-    border-top-right-radius:6px;
-  }
-  
-  .zcwf_lblLeft .zcwf_col_fld input[type=text], input[type=password] {
-    width: 100%;
-    border: 1px solid #c0c6cc !important;
-    resize: vertical;
-    border-radius: 2px;
-    float: left;
-    height:48px;
-    font-size :20px;
-  }
-
-  .zcwf_col_fld textarea{
-    width:100%;
-    height:125px;
-    border:1px solid #c0c6cc !important;
-    resize: vertical;
-    border-radius:2px;
-    float:left;
-    font-size:20px;
-  }
-
-  .zcwf_lblLeft .zcwf_col_lab {
-    width: 30%;
-    word-break: break-word;
-    padding: 0px 6px 0px;
-    margin-right: 10px;
-    margin-top: 16px;
-    float: left;
-    min-height: 1px;
-  }
-
-  .zcwf_lblLeft .zcwf_col_fld {
-    float: left;
-    width: 68%;
-    padding: 0px 6px 0px;
-    position: relative;
-    margin-top: 5px;
-  }
-
-  .zcwf_lblLeft .zcwf_privacy{padding: 6px;}
-
-  .zcwf_lblLeft .wfrm_fld_dpNn{display: none;}
-
-  .dIB{display: inline-block;}
-
-  .zcwf_lblLeft .zcwf_col_fld_slt {
-    width: 100%;
-    height:48px;
-    border: 1px solid #ccc;
-    background: #fff;
-    border-radius: 2px;
-    font-size: 12px;
-    float: left;
-    resize: vertical;
-    padding: 2px 5px;
-    font-size:20px;
-  }
-
-  .zcwf_lblLeft .zcwf_row:after, .zcwf_lblLeft .zcwf_col_fld:after {
-    content: '';
-    display: table;
-    clear: both;
-  }
-
-  .zcwf_lblLeft .zcwf_col_help {
-    float: left;
-    margin-left: 7px;
-    font-size: 12px;
-    max-width: 35%;
-    word-break: break-word;
-  }
-
-  .zcwf_lblLeft .zcwf_help_icon {
-    cursor: pointer;
-    width: 16px;
-    height: 16px;
-    display: inline-block;
-    background: #fff;
-    border: 1px solid #c0c6cc;
-    color: #c1c1c1;
-    text-align: center;
-    font-size: 11px;
-    line-height: 16px;
-    font-weight: bold;
-    border-radius: 50%;
-  }
-
-  .zcwf_lblLeft .zcwf_row {margin: 30px 0px;}
-  .zcwf_lblLeft .formsubmit {
-    margin-right: 5px;
-    margin-left:40px;
-    cursor: pointer;
-    color: #213743;
-    font-size: 12px;
-  }
-
-  .zcwf_lblLeft .zcwf_privacy_txt {
-    width: 90%;
-    color: rgb(0, 0, 0);
-    font-size: 12px;
-    font-family: Arial;
-    display: inline-block;
-    vertical-align: top;
-    color: #213743;
-    padding-top: 2px;
-    margin-left: 6px;
-  }
-
-  .zcwf_lblLeft .zcwf_button {
-    font-size: 16px;
-    color: #213743; 
-    border: 1px solid #c0c6cc;
-    padding: 3px 9px;
-    border-radius: 4px;
-    cursor: pointer;
-    max-width: 180px;
-    /* overflow: hidden; */
-    /* text-overflow: ellipsis; */
-    white-space: nowrap;
-  }
-
+    .formsubmit.zcwf_button#formsubmit{
+      color: white !important;
+      background: transparent linear-gradient(0deg, #0a786c 0%, #0a786c 100%);
+    }
+    
   .zcwf_lblLeft .zcwf_tooltip_over{
     position: relative;
   }
@@ -364,13 +370,13 @@
   <div class='zcwf_text' style ='margin-top:20px;'>［１］　お申込みいただきましたお客さまに「ほすぴタッチ」の資料を PDF 形式でお届けいたします（ダウンロード URL をメールいたします）。</div>
   <div class='zcwf_text'>［２］　メールアドレスはお間違いのないようにご入力ください。メールアドレスが間違っていました場合、弊社からのメールが届きません。</div>
   <div class='zcwf_text'>［３］　［ c-live.jp ］のドメインが受信できるように（迷惑メール扱いにならないよう）お願いいたします。</div>
-  <div class='zcwf_text' style ='margin-bottom:20px;'>［４］　カタログや見積書等のご郵送は対応しておりませんので何卒ご了承ください。</div>
+  <div class='zcwf_text' style ='margin-bottom:20px;'>［４］　カタログや見積書等のご郵送は対応しておりませんので何卒ご了承くださいませ。</div>
   <hr>
 
 
   <div class='zcwf_row'>
     <div class='zcwf_col_lab' style='font-size:16px; font-family: Arial;'>
-      <label for='Email'>メール<span style='color:red;'>*</span></label>
+      <label for='Email'>メールアドレス<span style='color:red;'>*</span></label>
     </div>
     <div class='zcwf_col_fld'>
       <div class="zcwf_Required">必須</div>
@@ -381,7 +387,7 @@
   
   <div class='zcwf_row'>
     <div class='zcwf_col_lab' style='font-size:16px; font-family: Arial;'>
-      <label for='LEADCF2'>メール確認用<span style='color:red;'>*</span></label>
+      <label for='LEADCF2'>メールアドレス（再入力）<span style='color:red;'>*</span></label>
     </div>
     <div class='zcwf_col_fld'>
       <div class="zcwf_Required">必須</div>
@@ -414,7 +420,7 @@
   
   <div class='zcwf_row'>
     <div class='zcwf_col_lab' style='font-size:16px; font-family: Arial;'>
-      <label for='Phone'>電話番号<span style='color:red;'>*</span></label>
+      <label for='Phone'>電話番号（ハイフンあり）<span style='color:red;'>*</span></label>
     </div>
     <div class='zcwf_col_fld'>
       <div class="zcwf_Required">必須</div>
@@ -425,7 +431,7 @@
 
   <div class='zcwf_row'>
     <div class='zcwf_col_lab' style='font-size:16px; font-family: Arial;'>
-      <label for='Website'>&#x8cb4;&#x793e;&#x306e;Web&#x30b5;&#x30a4;&#x30c8;URL</label>
+      <label for='Website'>&#x8cb4;&#x793e;&#x306e;Web&#x30b5;&#x30a4;&#x30c8;URL<span style='color:red;'>*</span></label>
     </div>
     <div class='zcwf_col_fld'>
       <div class="zcwf_Required">必須</div>
@@ -436,7 +442,7 @@
 
   <div class='zcwf_row'>
     <div class='zcwf_col_lab' style='font-size:16px; font-family: Arial;'>
-      <label for='LEADCF1'>&#x304a;&#x554f;&#x3044;&#x5408;&#x308f;&#x305b;&#x306e;&#x5185;&#x5bb9;&#x3092;&#x9078;&#x629e;&#x3057;&#x3066;&#x304f;&#x3060;&#x3055;&#x3044;</label>
+      <label for='LEADCF1'>&#x304a;&#x554f;&#x3044;&#x5408;&#x308f;&#x305b;&#x306e;&#x5185;&#x5bb9;&#x3092;&#x9078;&#x629e;&#x3057;&#x3066;&#x304f;&#x3060;&#x3055;&#x3044;<span style='color:red;'>*</span></label>
     </div>
     <div class='zcwf_col_fld'>
       <div class="zcwf_Required">必須</div>
@@ -469,29 +475,10 @@
     <div class='zcwf_col_lab'></div>
     <div class='zcwf_col_fld'>
       <input type='reset' class='zcwf_button' role='button' name='reset' value='フォームをクリア' aria-label='フォームをクリア' title='&#x30ea;&#x30bb;&#x30c3;&#x30c8;&#x3059;&#x308b;'>
-      <input type='submit' id='formsubmit' role='button' class='formsubmit zcwf_button' value='確認画面へ' aria-label='確認画面へ' title='&#x9001;&#x4fe1;&#x3059;&#x308b;'>
+      <input type='submit' id='formsubmit' role='button' class='formsubmit zcwf_button' value='送信' aria-label='送信' title='&#x9001;&#x4fe1;&#x3059;&#x308b;'>
     </div>
   </div>
 
-  <script>
-    function validateEmail() {
-      // メールアドレスの入力要素を取得
-      const email = document.getElementById('Email').value;
-      const emailConfirm = document.getElementById('LEADCF2').value;
-  
-      // メールアドレスが一致しない場合
-      if (email !== emailConfirm) {
-        alert('メールアドレスが一致しません。もう一度入力してください。');
-        return false; // フォームの送信をキャンセル
-      }
-      return true; // 一致する場合はフォームを送信
-    }
-  
-    // フォームの送信イベントを設定
-    document.querySelector('form').onsubmit = function() {
-      return validateEmail();
-    };
-  </script>
 
     <script>
       function addAriaSelected5103321000002008018()
@@ -524,6 +511,19 @@
         }
       }
       return true;
+    }
+
+    function validateEmail() {
+      // メールアドレスの入力要素を取得
+      const email = document.getElementById('Email').value;
+      const emailConfirm = document.getElementById('LEADCF2').value;
+  
+      // メールアドレスが一致しない場合
+      if (email !== emailConfirm) {
+        alert('メールアドレスが一致しません。もう一度入力してください。');
+        return false; // フォームの送信をキャンセル
+      }
+      return true; // 一致する場合はフォームを送信
     }
   
     function checkMandatory5103321000002008018() {
@@ -582,8 +582,9 @@
   $(document).ready(function () {
     $('#webform5103321000002008018').submit(function (e) {
       var ismandatory = checkMandatory5103321000002008018();
+      var checkEmail = validateEmail();
       e.preventDefault();
-      if(ismandatory){
+      if(ismandatory && checkEmail){
          if(typeof _wfa_track != 'undefined' && _wfa_track.wfa_submit){ _wfa_track.wfa_submit(e); }
         var formData = new FormData(this);
         $.ajax({
@@ -624,33 +625,88 @@
       tooltip.style.display='none';
     }
   }
+
   </script>
     <!-- Do not remove this --- Analytics Tracking code starts -->
      <script id='wf_anal' src='https://crm.zohopublic.com/crm/WebFormAnalyticsServeServlet?rid=f119f85783790cedb44ad2f688a922e14d9d9406650c5fba9ad9e4d3c0e0cd0ed828bd496725face22e6d4a7d248e546gid7470a50837af3e992761a8bff11e00764959ce55d99b161786c60e584e7bc9abgid4f8f53320a072234d42f8280ab82a9da025ab810c9a7d0f9e69585ae7b51e528gid7f2419e8056ead9a42e90c6ab1aa055221f816aa31fdf8d10bcbf2fe4f5a0433&tw=c1fa5992c11a34016421b34f10ee038b8b49dfa28457a0d13b35fe957e1595b1'></script><!-- Do not remove this --- Analytics Tracking code ends. -->
+     
   </form>
 </div>
 
 
 <style>
+
   .zcwf_ty{
     max-width:800px;
-    height:300px;
-    margin: 200px auto;
-    background:gray;
+    padding:30px;
+    padding-top:20px;
+    margin: 0 auto;
+    margin-bottom:200px;
+    /* background:gray; */
+    /* text-align:center; */
+    border: 1px solid #c0c6cc !important;
+    /* border-radius: 4px; */
+    box-sizing:border-box;
+    border-bottom-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+
+  .zcwf_ty .p-info{
     text-align:center;
   }
+
+
+  .transComp{
+    margin-bottom:20px;
+    font-size:24px;
+    font-weight:bold;
+  }
+
+  .transComp .material-icons{
+    color:#0a786c;
+    transform:transLateY(2px);
+  }
+
+  .zcwf_ty_text{
+    margin-top:20px;
+  }
+
+  .zcwf_ty-bg{
+    width:800px;
+    height:5px;
+    padding:0 30px;
+    background: #0a786c;
+    margin:0 auto;
+    margin-top:200px;
+    box-sizing:border-box;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+
+  }
+    
+
 </style>
 
-
-<div class="zcwf_ty">
-  <div>お問い合わせ誠にありがとうございます。</div>
-  <div>お問い合わせの内容によりましては回答にお時間をいただく場合がございます。</div>
-  <div>先ほどお客さま宛てに、控えメールを送信しました。</div>
-  <div>迷惑メールなどに分類されている場合もございますのでお気をつけください。</div>
-  <div>ほすぴタッチサポートセンター</div>
-  <div>hospitouch@c-live.jp</div>
-  <div>オンライン無料相談のご予約（無料）</div>
-  <div><a href="https://outlook.office365.com/book/Bookings@c-live.jp/">https://outlook.office365.com/book/Bookings@c-live.jp/</a></div>
+  <script>
+    var link = document.createElement('link');
+    link.href = 'https://fonts.googleapis.com/icon?family=Material+Icons';
+    link.rel = 'stylesheet';
+    document.head.appendChild(link);
+  </script>
+<div class="zcwf_ty-bg"></div>
+<div id="zcwf_ty" class="zcwf_ty">
+  <div class="transComp"><div class="material-icons">check_circle</div>送信完了</div>
+  <div class="zcwf_ty_text">この度は「ほすぴタッチ」へのお問い合わせを誠にありがとうございます。</div>
+  <div class="zcwf_ty_text">お問い合わせの内容によりましては回答にお時間をいただく場合がございますので、何卒ご了承くださいませ。</div>
+  <div class="zcwf_ty_text">先ほどお客さま宛てに、「控えメール」を自動送信いたしました。通常 2,3 分程度で着信します。</div>
+  <div class="zcwf_ty_text">「迷惑メール」などに分類されている場合もございますのでお気をつけください。</div>
+  <div class="zcwf_ty_text">控えメールが着信しない場合は、誠にお手数ではございますが下記までお問い合わせくださいませ。</div>
+  <div class="zcwf_ty_text p-info">ほすぴタッチサポートセンター</div>
+  <div class="p-info">hospitouch@c-live.jp</div>
+  <div class="zcwf_ty_text p-info">オンライン無料相談のご予約（無料）</div>
+  <div class="p-info"><a href="https://outlook.office365.com/book/Bookings@c-live.jp/">https://outlook.office365.com/book/Bookings@c-live.jp/</a></div>
 </div>
+
+
 </body>
 </html>
