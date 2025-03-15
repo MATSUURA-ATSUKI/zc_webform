@@ -15,621 +15,698 @@
    - Code lines with comments Do not remove this code are required for the form to work properly, make sure that you do not remove these lines of code. 
    - The Mandatory check script can modified as to suit your business needs. 
    - It is important that you test the modified form before going live.-->
-<div class="zcwf_topbackground" style= 'max-width: 800px;'></div>
-<div id='crmWebToEntityForm' class='zcwf_lblLeft crmWebToEntityForm' style= 'color: &#x23;000000;max-width: 800px;'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-     <META HTTP-EQUIV ='content-type' CONTENT='text/html;charset=SHIFT-JIS'>
+   <div class="zcwf_topbackground" style= 'max-width: 800px;'></div>
 
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">   
-  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js'></script>
-  
-  <style>
-  .wf_customMessageBox {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #132C14;
-    background:  #F5FAF5;
-    box-shadow:0 2px 6px 0 rgba(0,0,0,0.25);
-    max-width: 90%;
-    width:max-content;
-    word-break: break-word;
-    z-index: 11000;
-    border-radius: 6px;
-    border: 1px solid #A9D3AB;
-    min-width: 100px;
-    padding: 10px 15px;
-    display: flex;
-    align-items: center;
-    position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    }
+   <div id='crmWebToEntityForm' class='zcwf_lblLeft crmWebToEntityForm' style= 'color: &#x23;000000;max-width: 800px;'>
+       <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <META HTTP-EQUIV ='content-type' CONTENT='text/html;charset=SHIFT-JIS'>
 
-  .wf_customCircle {
-    position: relative;
-    background-color: #12AA67;
-    border-radius: 100%;
-    width: 20px;
-    height: 20px;
-    flex:none;
-    margin-right: 7px;
-    }
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+         rel="stylesheet">   
+     <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js'></script>
 
-  .wf_customCheckMark {
-    box-sizing: unset !important;
-    position: absolute;
-    transform: rotate(45deg) translate(-50%, -50%);
-    left: 6px;
-    top: 9px;
-    height: 8px;
-    width: 3px;
-    border-bottom: 2px solid #fff;
-    border-right: 2px solid #fff;
-    }
 
-  .wf_customClose {
-    box-sizing: border-box;
-    position: relative;
-    width: 18px;
-    height: 18px;
-    }
+     <style>
+     .wf_customMessageBox {
+       font-family: Arial, Helvetica, sans-serif;
+       color: #132C14;
+       background:  #F5FAF5;
+       box-shadow:0 2px 6px 0 rgba(0,0,0,0.25);
+       max-width: 90%;
+       width:max-content;
+       word-break: break-word;
+       z-index: 11000;
+       border-radius: 6px;
+       border: 1px solid #A9D3AB;
+       min-width: 100px;
+       padding: 10px 15px;
+       display: flex;
+       align-items: center;
+       position: fixed;
+       top: 20px;
+       left: 50%;
+       transform: translate(-50%, 0);
+       }
+   
+     .wf_customCircle {
+       position: relative;
+       background-color: #12AA67;
+       border-radius: 100%;
+       width: 20px;
+       height: 20px;
+       flex:none;
+       margin-right: 7px;
+       }
+   
+     .wf_customCheckMark {
+       box-sizing: unset !important;
+       position: absolute;
+       transform: rotate(45deg) translate(-50%, -50%);
+       left: 6px;
+       top: 9px;
+       height: 8px;
+       width: 3px;
+       border-bottom: 2px solid #fff;
+       border-right: 2px solid #fff;
+       }
+   
+     .wf_customClose {
+       box-sizing: border-box;
+       position: relative;
+       width: 18px;
+       height: 18px;
+       }
+   
+     .wf_customClose::after,
+     .wf_customClose::before {
+       content: '';
+       display: block;
+       box-sizing: border-box;
+       position: absolute;
+       width: 12px;
+       height: 1.5px;
+       background: #616E88;
+       transform: rotate(45deg);
+       border-radius: 5px;
+       top: 8px;
+       left: 1px
+       }
+   
+     .wf_customClose::after {
+       transform: rotate(-45deg)
+     }
+     </style> 
+   
+     <div class='wf_customMessageBox' id='wf_splash' style='display:none'>
+       <div class='wf_customCircle'>
+         <div class='wf_customCheckMark'></div>
+       </div>
+       <span id='wf_splash_info'></span>
+       </p>
+     </div>
+   
+     <form id = 'webform5103321000002008018' action = 'https://crm.zoho.com/crm/WebToLeadForm' name = WebToLeads5103321000002008018 method = 'POST' onSubmit = 'javascript:document.charset="UTF-8"; return checkMandatory5103321000002008018()' accept-charset = 'UTF-8'>
+      <input type = 'text' style = 'display:none;' name = 'xnQsjsdp' value = 'd1cf9d28cd27ef60ffda5e2cf03f96bfd1cb429e09264509e1a0297fcfc8cd95'></input>
+      <input type = 'hidden' name = 'zc_gad' id = 'zc_gad' value = ''></input>
+      <input type = 'text' style = 'display:none;' name = 'xmIwtLD' value = 'defbd69115d60994b9db094e75a3594bf8aa96abca237c6c021002618c08d963d939d2666d790cb5f1da03e295ba03a2'></input>
+      <input type = 'text' style = 'display:none;' name = 'actionType' value = 'TGVhZHM='></input>
+      <input type = 'text' style = 'display:none;' name = 'returnURL' value = 'https&#x3a;&#x2f;&#x2f;test.hospi.ai&#x2f;'></input>
+      <!-- Do not remove this code. -->
+     <style>
+   
+     html,body{
+       margin: 0px;
+     }
+     
+     
+     #formsubmit{
+       padding: 4px 30px;
+       position: left;
+     }
+     
+     #crmWebToEntityForm{
+       background:#F7F7F7;
+     }
+     
+     
+     
+     #crmWebToEntityForm.zcwf_lblLeft {
+       width:100%;
+       padding: 10px 25px;
+       margin: 0 auto;
+       box-sizing: border-box;
+     }
+     
+     #crmWebToEntityForm.zcwf_lblLeft * {
+       box-sizing: border-box;
+     }
+     
+     #crmWebToEntityForm{text-align: left;}
+     
+     #crmWebToEntityForm * {
+       direction: ltr;
+     }
+     
+     .zcwf_topbackground{
+       background:#0a786c;
+       width:100%;
+       height:5px;
+       margin:0 auto;
+       border-top-left-radius: 8px;
+       border-top-right-radius: 8px;
+     }
+     
+     .zcwf_title{
+       font-size:24px;
+     }
+     
+     .zcwf_lblLeft .zcwf_title {
+       word-wrap: break-word;
+       padding: 6px 6px 6px;
+       font-weight:bold }.zcwf_lblLeft.cpT_primaryBtn:hover{
+         background: linear-gradient(#02acff 0,#006be4 100%) no-repeat padding-box !important;
+         box-shadow: 0 -2px 0 0 #0159b9 inset !important;
+         border: 0 !important;
+         color: #fff !important;
+         outline: 0 !important;
+       }
+       
+       
+       .zcwf_text{
+         font-size:16px;
+         margin-top:14px;
+       }
+       
+       .zcwf_Required{
+         font-size:12px;
+         background: #cf566b;
+         color:white;
+         width:fit-content;
+         padding:2px 8px 0px;
+         border-top-left-radius:6px;
+         border-top-right-radius:6px;
+       }
+       
+       .zcwf_NotRequired{
+         font-size:12px;
+         background:#c0c6cc;
+         border-bottom:none;
+         width:fit-content;
+         padding:2px 8px 0px;
+         border-top-left-radius:6px;
+         border-top-right-radius:6px;
+       }
 
-  .wf_customClose::after,
-  .wf_customClose::before {
-    content: '';
-    display: block;
-    box-sizing: border-box;
-    position: absolute;
-    width: 12px;
-    height: 1.5px;
-    background: #616E88;
-    transform: rotate(45deg);
-    border-radius: 5px;
-    top: 8px;
-    left: 1px
-    }
+       .phoneCom{
+        display:flex;
+       }
 
-  .wf_customClose::after {
-    transform: rotate(-45deg)
-  }
-  </style> 
+       #redText{
+        color:#cf566b;
+        font-size:14px;
+        width:70%;
+        margin-left:auto;
+        display:none;
+       }
 
-  <div class='wf_customMessageBox' id='wf_splash' style='display:none'>
-    <div class='wf_customCircle'>
-      <div class='wf_customCheckMark'></div>
+       #redText.open{
+        display:block;
+       }
+
+       
+       .zcwf_lblLeft .zcwf_col_fld input[type=text], input[type=password] {
+         width: 100%;
+         border: 1px solid #c0c6cc;
+         resize: vertical;
+         border-radius: 2px;
+         float: left;
+         height:48px;
+         font-size :20px;
+         outline:none;
+       }
+       
+       .zcwf_col_fld textarea{
+         width:100%;
+         height:125px;
+         border:1px solid #c0c6cc !important;
+         resize: vertical;
+         border-radius:2px;
+         float:left;
+         font-size:20px;
+       }
+
+       .zcwf_lblLeft .zcwf_col_fld input[type=text].redBorder{
+        border:#cf566b 2px solid;
+       }
+
+       .zcwf_lblLeft .zcwf_col_fld input[type=text]:focus{
+        border:#213743 2px solid;
+       }
+
+       .zcwf_lblLeft .zcwf_col_fld input[type=text].redBorder:focus{
+        border:#cf566b 2px solid ;
+       }
+   
+
+       
+       .zcwf_lblLeft .zcwf_col_lab {
+         width: 30%;
+         word-break: break-word;
+         padding: 0px 6px 0px;
+         margin-right: 10px;
+         margin-top: 16px;
+         float: left;
+         min-height: 1px;
+       }
+       
+       .zcwf_lblLeft .zcwf_col_fld {
+         float: left;
+         width: 68%;
+         padding: 0px 6px 0px;
+         position: relative;
+         margin-top: 5px;
+       }
+       
+       .zcwf_lblLeft .zcwf_privacy{padding: 6px;}
+       
+       .zcwf_lblLeft .wfrm_fld_dpNn{display: none;}
+       
+       .dIB{display: inline-block;}
+       
+       .zcwf_lblLeft .zcwf_col_fld_slt {
+         width: 100%;
+         height:48px;
+         border: 1px solid #ccc;
+         background: #fff;
+         border-radius: 2px;
+         font-size: 12px;
+         float: left;
+         resize: vertical;
+         padding: 2px 5px;
+         font-size:20px;
+       }
+       
+       .zcwf_lblLeft .zcwf_row:after, .zcwf_lblLeft .zcwf_col_fld:after {
+         content: '';
+         display: table;
+         clear: both;
+       }
+       
+       .zcwf_lblLeft .zcwf_col_help {
+         float: left;
+         margin-left: 7px;
+         font-size: 12px;
+         max-width: 35%;
+         word-break: break-word;
+       }
+       
+       .zcwf_lblLeft .zcwf_help_icon {
+         cursor: pointer;
+         width: 16px;
+         height: 16px;
+         display: inline-block;
+         background: #fff;
+         border: 1px solid #c0c6cc;
+         color: #c1c1c1;
+         text-align: center;
+         font-size: 11px;
+         line-height: 16px;
+         font-weight: bold;
+         border-radius: 50%;
+       }
+       
+       .zcwf_lblLeft .zcwf_row {margin: 30px 0px;}
+       .zcwf_lblLeft .formsubmit {
+         margin-right: 5px;
+         margin-left:40px;
+         cursor: pointer;
+         color: #213743;
+         font-size: 12px;
+       }
+       
+       .zcwf_lblLeft .zcwf_privacy_txt {
+         width: 90%;
+         color: rgb(0, 0, 0);
+         font-size: 12px;
+         font-family: Arial;
+         display: inline-block;
+         vertical-align: top;
+         color: #213743;
+         padding-top: 2px;
+         margin-left: 6px;
+       }
+       
+       .zcwf_lblLeft .zcwf_button{
+         font-size: 16px;
+         color: #213743; 
+         border: 1px solid #c0c6cc;
+         padding: 3px 9px;
+         border-radius: 4px;
+         cursor: pointer;
+         width:200px;
+         height:50px;
+         /* max-width: 180px; */
+         background:#dcdcdc;
+         /* overflow: hidden; */
+         /* text-overflow: ellipsis; */
+         white-space: nowrap;
+       }
+   
+       .formsubmit.zcwf_button#formsubmit{
+         color: white !important;
+         background: transparent linear-gradient(0deg, #0a786c 0%, #0a786c 100%);
+       }
+       
+     .zcwf_lblLeft .zcwf_tooltip_over{
+       position: relative;
+     }
+   
+     .zcwf_lblLeft .zcwf_tooltip_ctn{
+       position: absolute;
+       background: #dedede;
+       padding: 3px 6px;
+       top: 3px;
+       border-radius: 4px;word-break: break-word;
+       min-width: 100px;
+       max-width: 150px;
+       color: #213743;
+       z-index: 100;
+     }
+   
+     .zcwf_lblLeft .zcwf_ckbox{
+       float: left;
+     }
+   
+     .zcwf_lblLeft .zcwf_file{
+       width: 55%;
+       box-sizing: border-box;
+       float: left;
+     }
+   
+     .cBoth:after{
+       content:'';
+       display: block;
+       clear: both;
+     }
+   
+     @media all and (max-width: 600px) {
+       .zcwf_lblLeft .zcwf_col_lab, .zcwf_lblLeft .zcwf_col_fld {
+         width: auto;
+         float: none !important;
+       }
+       .zcwf_lblLeft .zcwf_col_help {width: 40%;}
+     }
+   
+     </style>
+     
+     <div class='zcwf_title' style='max-width: 600px;color: &#x23;000000; font-family:Arial;'>ご注意事項</div>
+     <hr>
+     <div class='zcwf_text' style ='margin-top:20px;'>［１］　お申込みいただきましたお客さまに「ほすぴタッチ」の資料を PDF 形式でお届けいたします（ダウンロード URL をメールいたします）。</div>
+     <div class='zcwf_text'>［２］　メールアドレスはお間違いのないようにご入力ください。メールアドレスが間違っていました場合、弊社からのメールが届きません。</div>
+     <div class='zcwf_text'>［３］　［ c-live.jp ］のドメインが受信できるように（迷惑メール扱いにならないよう）お願いいたします。</div>
+     <div class='zcwf_text' style ='margin-bottom:20px;'>［４］　カタログや見積書等のご郵送は対応しておりませんので何卒ご了承くださいませ。</div>
+     <hr>
+   
+   
+     <div class='zcwf_row'>
+       <div class='zcwf_col_lab' style='font-size:16px; font-family: Arial;'>
+         <label for='Email'>メールアドレス<span style='color:red;'>*</span></label>
+       </div>
+       <div class='zcwf_col_fld'>
+         <div class="zcwf_Required">必須</div>
+         <input type='text' ftype='email' autocomplete='false' id='Email' aria-required='true' aria-label='Email' name='Email' aria-valuemax='100' crmlabel='' maxlength='100'></input>
+         <div class='zcwf_col_help'></div>
+       </div>
+     </div>
+     
+     <div class='zcwf_row'>
+       <div class='zcwf_col_lab' style='font-size:16px; font-family: Arial;'>
+         <label for='LEADCF2'>メールアドレス（再入力）<span style='color:red;'>*</span></label>
+       </div>
+       <div class='zcwf_col_fld'>
+         <div class="zcwf_Required">必須</div>
+         <input type='text' ftype='email' autocomplete='false' id='LEADCF2' aria-required='true' aria-label='LEADCF2' name='LEADCF2' aria-valuemax='100' crmlabel='' maxlength='100'></input>
+         <div class='zcwf_col_help'></div>
+       </div>
+     </div>
+   
+     <div class='zcwf_row'>
+       <div class='zcwf_col_lab' style='font-size:16px; font-family: Arial;'>
+         <label for='Company'>法人名・団体名<span style='color:red;'>*</span></label>
+       </div>
+       <div class='zcwf_col_fld'>
+         <div class="zcwf_Required">必須</div>
+         <input type='text' id='Company' aria-required='true' aria-label='Company' name='Company' aria-valuemax='200' maxlength='200'></input>
+         <div class='zcwf_col_help'></div>
+       </div>
+     </div>
+   
+     <div class='zcwf_row'>
+       <div class='zcwf_col_lab' style='font-size:16px; font-family: Arial;'>
+         <label for='Last_Name'>ご担当者さま氏名<span style='color:red;'>*</span></label>
+       </div>
+       <div class='zcwf_col_fld'>
+         <div class="zcwf_Required">必須</div>
+         <input type='text' id='Last_Name' aria-required='true' aria-label='Last Name' name='Last Name' aria-valuemax='80' maxlength='80'></input>
+         <div class='zcwf_col_help'></div>
+       </div>
+     </div>
+     
+     <div class='zcwf_row'>
+       <div class='zcwf_col_lab' style='font-size:16px; font-family: Arial;'>
+         <label for='Phone'>電話番号（ハイフンあり）<span style='color:red;'>*</span></label>
+       </div>
+       <div class='zcwf_col_fld'>
+          <div class="phoneCom">
+            <div class="zcwf_Required">必須</div>
+            <div id="redText" class="">全角数字、または文字が入力されています。</div>
+          </div>
+         <input type='text' id='Phone' aria-required='true' aria-label='Phone' name='Phone' aria-valuemax='30' maxlength='20'></input>
+         <div class='zcwf_col_help'></div>
+       </div>
+     </div>
+   
+     <div class='zcwf_row'>
+       <div class='zcwf_col_lab' style='font-size:16px; font-family: Arial;'>
+         <label for='Website'>&#x8cb4;&#x793e;&#x306e;Web&#x30b5;&#x30a4;&#x30c8;URL<span style='color:red;'>*</span></label>
+       </div>
+       <div class='zcwf_col_fld'>
+         <div class="zcwf_Required">必須</div>
+         <input type='text' id='Website' aria-required='false' aria-label='Website' name='Website' aria-valuemax='255' maxlength='255'></input>
+         <div class='zcwf_col_help'></div>
+       </div>
+     </div>
+   
+     <div class='zcwf_row'>
+       <div class='zcwf_col_lab' style='font-size:16px; font-family: Arial;'>
+         <label for='LEADCF1'>&#x304a;&#x554f;&#x3044;&#x5408;&#x308f;&#x305b;&#x306e;&#x5185;&#x5bb9;&#x3092;&#x9078;&#x629e;&#x3057;&#x3066;&#x304f;&#x3060;&#x3055;&#x3044;<span style='color:red;'>*</span></label>
+       </div>
+       <div class='zcwf_col_fld'>
+         <div class="zcwf_Required">必須</div>
+         <select class='zcwf_col_fld_slt' role='combobox' aria-expanded='false' aria-haspopup='listbox' id='LEADCF1' onChange='addAriaSelected5103321000002008018()' aria-required='false' aria-label='LEADCF1' name='LEADCF1'  >
+           <!-- <option selected value='-None-'>-None-</option> -->
+           <option selected value='&#x8cc7;&#x6599;&#x8acb;&#x6c42;'>&#x8cc7;&#x6599;&#x8acb;&#x6c42;</option>
+           <option value='&#x4e00;&#x5ea6;&#x30aa;&#x30f3;&#x30e9;&#x30a4;&#x30f3;&#x3067;&#x76f8;&#x8ac7;&#x3092;&#x3057;&#x305f;&#x3044;&#xff08;&#x7121;&#x6599;&#xff09;'>&#x4e00;&#x5ea6;&#x30aa;&#x30f3;&#x30e9;&#x30a4;&#x30f3;&#x3067;&#x76f8;&#x8ac7;&#x3092;&#x3057;&#x305f;&#x3044;&#xff08;&#x7121;&#x6599;&#xff09;</option>
+           <option value='&#x30c7;&#x30e2;&#x753b;&#x9762;&#x3092;&#x898b;&#x305f;&#x3044;'>&#x30c7;&#x30e2;&#x753b;&#x9762;&#x3092;&#x898b;&#x305f;&#x3044;</option>
+           <option value='&#x898b;&#x7a4d;&#x66f8;&#x306e;&#x3054;&#x4f9d;&#x983c;'>&#x898b;&#x7a4d;&#x66f8;&#x306e;&#x3054;&#x4f9d;&#x983c;</option>
+           <option value='&#x96fb;&#x8a71;&#x304c;&#x6b32;&#x3057;&#x3044;'>&#x96fb;&#x8a71;&#x304c;&#x6b32;&#x3057;&#x3044;</option>
+           <!-- <option value='&#x90f5;&#x9001;&#x306e;&#x5e0c;&#x671b;'>&#x90f5;&#x9001;&#x306e;&#x5e0c;&#x671b;</option> -->
+           <option value='&#x305d;&#x306e;&#x4ed6;'>&#x305d;&#x306e;&#x4ed6;</option>
+         </select>
+   
+         <div class='zcwf_col_help'></div>
+       </div>
+     </div>
+     
+
+      <div class='zcwf_row'>
+        <div class='zcwf_col_lab' style='font-size:16px; font-family: Arial;'>
+          <label for='Description'>メッセージがございましたらご自由にご記入ください（1,000文字以内）</label>
+        </div>
+        <div class='zcwf_col_fld'>
+          <div class="zcwf_NotRequired">任意</div>
+          <textarea style='font-family: Arial, sans-serif;' aria-multiline='true' id='Description' aria-required='false' aria-label='Description' name='Description'maxlength='1000'></textarea>
+          <div class='zcwf_col_help'></div>
+        </div>
+      </div>
+
+    <div class='zcwf_row'>
+      <div class='zcwf_col_lab'></div>
+      <div class='zcwf_col_fld'>
+        <input type='reset' class='zcwf_button' role='button' name='reset' value='フォームをクリア' aria-label='フォームをクリア' title='&#x30ea;&#x30bb;&#x30c3;&#x30c8;&#x3059;&#x308b;'>
+        <input type='submit' id='formsubmit' role='button' class='formsubmit zcwf_button' value='送信' aria-label='送信' title='&#x9001;&#x4fe1;&#x3059;&#x308b;'>
+      </div>
     </div>
-    <span id='wf_splash_info'></span>
-    </p>
-  </div>
-
-  <form id='webform5103321000002008018' name=WebToLeads5103321000002008018 accept-charset='UTF-8'>
-   <input type='text' style='display:none;' name='xnQsjsdp' value='0448c78be89aca1bdeacb2d1dca9be6407988e7c1ec5520d5fee49f777a0aec9'></input> 
-   <input type='hidden' name='zc_gad' id='zc_gad' value=''></input>
-   <input type='text' style='display:none;' name='xmIwtLD' value='c259b4526982d74646755584948effdc1b2407d46262c24642783f40c3c337a1dffe92a1071662922685e3d039b76d36'></input> 
-   <input type='text'  style='display:none;' name='actionType' value='TGVhZHM='></input>
-   <input type='text' style='display:none;' name='returnURL' value='null' > </input>
-     <!-- Do not remove this code. -->
-  <style>
-
-  html,body{
-    margin: 0px;
-  }
-  
-  
-  #formsubmit{
-    padding: 4px 30px;
-    position: left;
-  }
-  
-  #crmWebToEntityForm{
-    background:#F7F7F7;
-  }
-  
-  
-  
-  #crmWebToEntityForm.zcwf_lblLeft {
-    width:100%;
-    padding: 10px 25px;
-    margin: 0 auto;
-    box-sizing: border-box;
-  }
-  
-  #crmWebToEntityForm.zcwf_lblLeft * {
-    box-sizing: border-box;
-  }
-  
-  #crmWebToEntityForm{text-align: left;}
-  
-  #crmWebToEntityForm * {
-    direction: ltr;
-  }
-  
-  .zcwf_topbackground{
-    background:#0a786c;
-    width:100%;
-    height:5px;
-    margin:0 auto;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-  }
-  
-  .zcwf_title{
-    font-size:24px;
-  }
-  
-  .zcwf_lblLeft .zcwf_title {
-    word-wrap: break-word;
-    padding: 6px 6px 6px;
-    font-weight:bold }.zcwf_lblLeft.cpT_primaryBtn:hover{
-      background: linear-gradient(#02acff 0,#006be4 100%) no-repeat padding-box !important;
-      box-shadow: 0 -2px 0 0 #0159b9 inset !important;
-      border: 0 !important;
-      color: #fff !important;
-      outline: 0 !important;
-    }
-    
-    
-    .zcwf_text{
-      font-size:16px;
-      margin-top:14px;
-    }
-    
-    .zcwf_Required{
-      font-size:12px;
-      background: #cf566b;
-      color:white;
-      width:fit-content;
-      padding:2px 8px 0px;
-      border-top-left-radius:6px;
-      border-top-right-radius:6px;
-    }
-    
-    .zcwf_NotRequired{
-      font-size:12px;
-      background:#c0c6cc;
-      border-bottom:none;
-      width:fit-content;
-      padding:2px 8px 0px;
-      border-top-left-radius:6px;
-      border-top-right-radius:6px;
-    }
-    
-    .zcwf_lblLeft .zcwf_col_fld input[type=text], input[type=password] {
-      width: 100%;
-      border: 1px solid #c0c6cc !important;
-      resize: vertical;
-      border-radius: 2px;
-      float: left;
-      height:48px;
-      font-size :20px;
-    }
-    
-    .zcwf_col_fld textarea{
-      width:100%;
-      height:125px;
-      border:1px solid #c0c6cc !important;
-      resize: vertical;
-      border-radius:2px;
-      float:left;
-      font-size:20px;
-    }
-    
-    .zcwf_lblLeft .zcwf_col_lab {
-      width: 30%;
-      word-break: break-word;
-      padding: 0px 6px 0px;
-      margin-right: 10px;
-      margin-top: 16px;
-      float: left;
-      min-height: 1px;
-    }
-    
-    .zcwf_lblLeft .zcwf_col_fld {
-      float: left;
-      width: 68%;
-      padding: 0px 6px 0px;
-      position: relative;
-      margin-top: 5px;
-    }
-    
-    .zcwf_lblLeft .zcwf_privacy{padding: 6px;}
-    
-    .zcwf_lblLeft .wfrm_fld_dpNn{display: none;}
-    
-    .dIB{display: inline-block;}
-    
-    .zcwf_lblLeft .zcwf_col_fld_slt {
-      width: 100%;
-      height:48px;
-      border: 1px solid #ccc;
-      background: #fff;
-      border-radius: 2px;
-      font-size: 12px;
-      float: left;
-      resize: vertical;
-      padding: 2px 5px;
-      font-size:20px;
-    }
-    
-    .zcwf_lblLeft .zcwf_row:after, .zcwf_lblLeft .zcwf_col_fld:after {
-      content: '';
-      display: table;
-      clear: both;
-    }
-    
-    .zcwf_lblLeft .zcwf_col_help {
-      float: left;
-      margin-left: 7px;
-      font-size: 12px;
-      max-width: 35%;
-      word-break: break-word;
-    }
-    
-    .zcwf_lblLeft .zcwf_help_icon {
-      cursor: pointer;
-      width: 16px;
-      height: 16px;
-      display: inline-block;
-      background: #fff;
-      border: 1px solid #c0c6cc;
-      color: #c1c1c1;
-      text-align: center;
-      font-size: 11px;
-      line-height: 16px;
-      font-weight: bold;
-      border-radius: 50%;
-    }
-    
-    .zcwf_lblLeft .zcwf_row {margin: 30px 0px;}
-    .zcwf_lblLeft .formsubmit {
-      margin-right: 5px;
-      margin-left:40px;
-      cursor: pointer;
-      color: #213743;
-      font-size: 12px;
-    }
-    
-    .zcwf_lblLeft .zcwf_privacy_txt {
-      width: 90%;
-      color: rgb(0, 0, 0);
-      font-size: 12px;
-      font-family: Arial;
-      display: inline-block;
-      vertical-align: top;
-      color: #213743;
-      padding-top: 2px;
-      margin-left: 6px;
-    }
-    
-    .zcwf_lblLeft .zcwf_button{
-      font-size: 16px;
-      color: #213743; 
-      border: 1px solid #c0c6cc;
-      padding: 3px 9px;
-      border-radius: 4px;
-      cursor: pointer;
-      width:200px;
-      height:50px;
-      /* max-width: 180px; */
-      background:#dcdcdc;
-      /* overflow: hidden; */
-      /* text-overflow: ellipsis; */
-      white-space: nowrap;
-    }
-
-    .formsubmit.zcwf_button#formsubmit{
-      color: white !important;
-      background: transparent linear-gradient(0deg, #0a786c 0%, #0a786c 100%);
-    }
-    
-  .zcwf_lblLeft .zcwf_tooltip_over{
-    position: relative;
-  }
-
-  .zcwf_lblLeft .zcwf_tooltip_ctn{
-    position: absolute;
-    background: #dedede;
-    padding: 3px 6px;
-    top: 3px;
-    border-radius: 4px;word-break: break-word;
-    min-width: 100px;
-    max-width: 150px;
-    color: #213743;
-    z-index: 100;
-  }
-
-  .zcwf_lblLeft .zcwf_ckbox{
-    float: left;
-  }
-
-  .zcwf_lblLeft .zcwf_file{
-    width: 55%;
-    box-sizing: border-box;
-    float: left;
-  }
-
-  .cBoth:after{
-    content:'';
-    display: block;
-    clear: both;
-  }
-
-  @media all and (max-width: 600px) {
-    .zcwf_lblLeft .zcwf_col_lab, .zcwf_lblLeft .zcwf_col_fld {
-      width: auto;
-      float: none !important;
-    }
-    .zcwf_lblLeft .zcwf_col_help {width: 40%;}
-  }
-
-  </style>
-  
-  <div class='zcwf_title' style='max-width: 600px;color: &#x23;000000; font-family:Arial;'>ご注意事項</div>
-  <hr>
-  <div class='zcwf_text' style ='margin-top:20px;'>［１］　お申込みいただきましたお客さまに「ほすぴタッチ」の資料を PDF 形式でお届けいたします（ダウンロード URL をメールいたします）。</div>
-  <div class='zcwf_text'>［２］　メールアドレスはお間違いのないようにご入力ください。メールアドレスが間違っていました場合、弊社からのメールが届きません。</div>
-  <div class='zcwf_text'>［３］　［ c-live.jp ］のドメインが受信できるように（迷惑メール扱いにならないよう）お願いいたします。</div>
-  <div class='zcwf_text' style ='margin-bottom:20px;'>［４］　カタログや見積書等のご郵送は対応しておりませんので何卒ご了承くださいませ。</div>
-  <hr>
-
-
-  <div class='zcwf_row'>
-    <div class='zcwf_col_lab' style='font-size:16px; font-family: Arial;'>
-      <label for='Email'>メールアドレス<span style='color:red;'>*</span></label>
-    </div>
-    <div class='zcwf_col_fld'>
-      <div class="zcwf_Required">必須</div>
-      <input type='text' ftype='email' autocomplete='false' id='Email' aria-required='true' aria-label='Email' name='Email' aria-valuemax='100' crmlabel='' maxlength='100'></input>
-      <div class='zcwf_col_help'></div>
-    </div>
-  </div>
-  
-  <div class='zcwf_row'>
-    <div class='zcwf_col_lab' style='font-size:16px; font-family: Arial;'>
-      <label for='LEADCF2'>メールアドレス（再入力）<span style='color:red;'>*</span></label>
-    </div>
-    <div class='zcwf_col_fld'>
-      <div class="zcwf_Required">必須</div>
-      <input type='text' ftype='email' autocomplete='false' id='LEADCF2' aria-required='true' aria-label='LEADCF2' name='LEADCF2' aria-valuemax='100' crmlabel='' maxlength='100'></input>
-      <div class='zcwf_col_help'></div>
-    </div>
-  </div>
-
-  <div class='zcwf_row'>
-    <div class='zcwf_col_lab' style='font-size:16px; font-family: Arial;'>
-      <label for='Company'>法人名・団体名<span style='color:red;'>*</span></label>
-    </div>
-    <div class='zcwf_col_fld'>
-      <div class="zcwf_Required">必須</div>
-      <input type='text' id='Company' aria-required='true' aria-label='Company' name='Company' aria-valuemax='200' maxlength='200'></input>
-      <div class='zcwf_col_help'></div>
-    </div>
-  </div>
-
-  <div class='zcwf_row'>
-    <div class='zcwf_col_lab' style='font-size:16px; font-family: Arial;'>
-      <label for='Last_Name'>ご担当者さま氏名<span style='color:red;'>*</span></label>
-    </div>
-    <div class='zcwf_col_fld'>
-      <div class="zcwf_Required">必須</div>
-      <input type='text' id='Last_Name' aria-required='true' aria-label='Last Name' name='Last Name' aria-valuemax='80' maxlength='80'></input>
-      <div class='zcwf_col_help'></div>
-    </div>
-  </div>
-  
-  <div class='zcwf_row'>
-    <div class='zcwf_col_lab' style='font-size:16px; font-family: Arial;'>
-      <label for='Phone'>電話番号（ハイフンあり）<span style='color:red;'>*</span></label>
-    </div>
-    <div class='zcwf_col_fld'>
-      <div class="zcwf_Required">必須</div>
-      <input type='text' id='Phone' aria-required='true' aria-label='Phone' name='Phone' aria-valuemax='30' maxlength='30'></input>
-      <div class='zcwf_col_help'></div>
-    </div>
-  </div>
-
-  <div class='zcwf_row'>
-    <div class='zcwf_col_lab' style='font-size:16px; font-family: Arial;'>
-      <label for='Website'>&#x8cb4;&#x793e;&#x306e;Web&#x30b5;&#x30a4;&#x30c8;URL<span style='color:red;'>*</span></label>
-    </div>
-    <div class='zcwf_col_fld'>
-      <div class="zcwf_Required">必須</div>
-      <input type='text' id='Website' aria-required='false' aria-label='Website' name='Website' aria-valuemax='255' maxlength='255'></input>
-      <div class='zcwf_col_help'></div>
-    </div>
-  </div>
-
-  <div class='zcwf_row'>
-    <div class='zcwf_col_lab' style='font-size:16px; font-family: Arial;'>
-      <label for='LEADCF1'>&#x304a;&#x554f;&#x3044;&#x5408;&#x308f;&#x305b;&#x306e;&#x5185;&#x5bb9;&#x3092;&#x9078;&#x629e;&#x3057;&#x3066;&#x304f;&#x3060;&#x3055;&#x3044;<span style='color:red;'>*</span></label>
-    </div>
-    <div class='zcwf_col_fld'>
-      <div class="zcwf_Required">必須</div>
-      <select class='zcwf_col_fld_slt' role='combobox' aria-expanded='false' aria-haspopup='listbox' id='LEADCF1' onChange='addAriaSelected5103321000002008018()' aria-required='false' aria-label='LEADCF1' name='LEADCF1'  >
-        <!-- <option selected value='-None-'>-None-</option> -->
-        <option selected value='&#x8cc7;&#x6599;&#x8acb;&#x6c42;'>&#x8cc7;&#x6599;&#x8acb;&#x6c42;</option>
-        <option value='&#x4e00;&#x5ea6;&#x30aa;&#x30f3;&#x30e9;&#x30a4;&#x30f3;&#x3067;&#x76f8;&#x8ac7;&#x3092;&#x3057;&#x305f;&#x3044;&#xff08;&#x7121;&#x6599;&#xff09;'>&#x4e00;&#x5ea6;&#x30aa;&#x30f3;&#x30e9;&#x30a4;&#x30f3;&#x3067;&#x76f8;&#x8ac7;&#x3092;&#x3057;&#x305f;&#x3044;&#xff08;&#x7121;&#x6599;&#xff09;</option>
-        <option value='&#x30c7;&#x30e2;&#x753b;&#x9762;&#x3092;&#x898b;&#x305f;&#x3044;'>&#x30c7;&#x30e2;&#x753b;&#x9762;&#x3092;&#x898b;&#x305f;&#x3044;</option>
-        <option value='&#x898b;&#x7a4d;&#x66f8;&#x306e;&#x3054;&#x4f9d;&#x983c;'>&#x898b;&#x7a4d;&#x66f8;&#x306e;&#x3054;&#x4f9d;&#x983c;</option>
-        <option value='&#x96fb;&#x8a71;&#x304c;&#x6b32;&#x3057;&#x3044;'>&#x96fb;&#x8a71;&#x304c;&#x6b32;&#x3057;&#x3044;</option>
-        <!-- <option value='&#x90f5;&#x9001;&#x306e;&#x5e0c;&#x671b;'>&#x90f5;&#x9001;&#x306e;&#x5e0c;&#x671b;</option> -->
-        <option value='&#x305d;&#x306e;&#x4ed6;'>&#x305d;&#x306e;&#x4ed6;</option>
-      </select>
-
-      <div class='zcwf_col_help'></div>
-    </div>
-  </div>
-  
-  <div class='zcwf_row'><div class='zcwf_col_lab' style='font-size:16px; font-family: Arial;'>
-    <label for='Description'>メッセージがございましたらご自由にご記入ください（1,000文字以内）</label>
-  </div>
-  <div class='zcwf_col_fld'>
-    <div class="zcwf_NotRequired">任意</div>
-    <textarea style='font-family: Arial, sans-serif;' aria-multiline='true' id='Description' aria-required='false' aria-label='Description' name='Description'></textarea>
-    <div class='zcwf_col_help'></div>
-  </div>
-</div>
-
-  <div class='zcwf_row'>
-    <div class='zcwf_col_lab'></div>
-    <div class='zcwf_col_fld'>
-      <input type='reset' class='zcwf_button' role='button' name='reset' value='フォームをクリア' aria-label='フォームをクリア' title='&#x30ea;&#x30bb;&#x30c3;&#x30c8;&#x3059;&#x308b;'>
-      <input type='submit' id='formsubmit' role='button' class='formsubmit zcwf_button' value='送信' aria-label='送信' title='&#x9001;&#x4fe1;&#x3059;&#x308b;'>
-    </div>
-  </div>
-
 
     <script>
-      function addAriaSelected5103321000002008018()
-      {
+
+
+      document.getElementById('Phone').addEventListener('blur', function() {
+          const value = this.value;
+          const regex = /^[0-9\-]*$/; // 半角数字とハイフンのみを許可する正規表現
+
+          if (!regex.test(value)) {
+              this.classList.add('redBorder'); // 不正な文字が含まれている場合のクラス
+              document.getElementById('redText').classList.add('open');
+          } else {
+              this.classList.remove('redBorder'); // 正しい場合はクラスを削除
+              document.getElementById('redText').classList.remove('open');
+
+          }
+      });
+
+
+      document.getElementById('Email').addEventListener('blur', function() {
+            const emailInput = document.getElementById('Email');
+            const email = emailInput.value;
+
+            // @の位置を確認
+            const atPosition = email.indexOf('@');
+            // 最後のドットの位置を確認
+            const lastDotPosition = email.lastIndexOf('.');
+            // バリデーションチェック
+            const isValid = atPosition > 0 && lastDotPosition > atPosition + 1 && (email.length - lastDotPosition > 2);
+
+            if (isValid) {
+                emailInput.classList.remove('redBorder'); // 有効な場合
+            } else {
+                emailInput.classList.add('redBorder'); // 無効な場合
+
+            }
+      });
+
+      document.getElementById('LEADCF2').addEventListener('blur', function() {
+        const email = document.getElementById('Email').value;
+        const emailConfirm = document.getElementById('LEADCF2');
+    
+        // メールアドレスが一致しない場合
+        if (email !== emailConfirm.value) {
+        emailConfirm.classList.add('redBorder'); 
+        } else{
+          emailConfirm.classList.remove('redBorder');
+        }
+
+      });
+
+    </script>
+    
+   
+    <script>
+      function addAriaSelected5103321000002008018(){
         var optionElem = event.target;
-        var previousSelectedOption=optionElem.querySelector('[aria-selected=true]');
-        if(previousSelectedOption){
-          previousSelectedOption.removeAttribute('aria-selected');
+        var previousSelectedOption = optionElem.querySelector( '[aria-selected=true]' );
+        if( previousSelectedOption ){
+          previousSelectedOption.removeAttribute( 'aria-selected' );
         }
-        optionElem.querySelectorAll('option')[optionElem.selectedIndex].ariaSelected='true';
+        optionElem.querySelectorAll( 'option' )[ optionElem.selectedIndex ].ariaSelected = 'true';
       }
-    function validateEmail5103321000002008018()
-    {
-      var form = document.forms['WebToLeads5103321000002008018'];
-      var emailFld = form.querySelectorAll('[ftype=email]');
-      var i;
-      for (i = 0; i < emailFld.length; i++)
-      {
-        var emailVal = emailFld[i].value;
-        if((emailVal.replace(/^\s+|\s+$/g, '')).length!=0 )
-        {
-          var atpos=emailVal.indexOf('@');
-          var dotpos=emailVal.lastIndexOf('.');
-          if (atpos<1 || dotpos<atpos+2 || dotpos+2>=emailVal.length)
-          {
-            alert('有効なメールアドレスを入力してください。 ');
-            emailFld[i].focus();
-            return false;
+
+      function validateEmail5103321000002008018(){
+        var form = document.forms[ 'WebToLeads5103321000002008018' ];
+        var emailFld = form.querySelectorAll( '[ftype=email]' );
+        var i;
+        for( i = 0; i < emailFld.length; i++ ){
+          var emailVal = emailFld[ i ].value;
+          if(( emailVal.replace( /^\s+|\s+$/g,'' )).length != 0 ){
+            var atpos = emailVal.indexOf( '@' );
+            var dotpos = emailVal.lastIndexOf( '.' );
+            if( atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= emailVal.length ){
+              alert( '有効なメールアドレスを入力してください。 ' );
+              emailFld[ i ].focus();
+              return false;
+            }
           }
         }
+        return true;
       }
-      return true;
-    }
 
-    function validateEmail() {
-      // メールアドレスの入力要素を取得
-      const email = document.getElementById('Email').value;
-      const emailConfirm = document.getElementById('LEADCF2').value;
-  
-      // メールアドレスが一致しない場合
-      if (email !== emailConfirm) {
-        alert('メールアドレスが一致しません。もう一度入力してください。');
-        return false; // フォームの送信をキャンセル
+      function validateEmail() {
+        // メールアドレスの入力要素を取得
+        const email = document.getElementById('Email').value;
+        const emailConfirm = document.getElementById('LEADCF2').value;
+    
+        // メールアドレスが一致しない場合
+        if (email !== emailConfirm) {
+          alert('メールアドレスが一致しません。もう一度入力してください。');
+          return false; // フォームの送信をキャンセル
+        }
+        return true; // 一致する場合はフォームを送信
       }
-      return true; // 一致する場合はフォームを送信
-    }
-  
-    function checkMandatory5103321000002008018() {
-      var mndFileds = new Array('Company','Last Name','Email','Phone','LEADCF2');
-      var fldLangVal = new Array('\u6CD5\u4EBA\u540D\u30FB\u56E3\u4F53\u540D','\u3054\u62C5\u5F53\u8005\u3055\u307E\u6C0F\u540D','\u30E1\u30FC\u30EB','\u96FB\u8A71\u756A\u53F7','\u30E1\u30FC\u30EB\u78BA\u8A8D\u7528');
-      for(i=0;i<mndFileds.length;i++) {
-        var fieldObj=document.forms['WebToLeads5103321000002008018'][mndFileds[i]];
-        if(fieldObj) {
-        if (((fieldObj.value).replace(/^\s+|\s+$/g, '')).length==0) {
-         if(fieldObj.type =='file')
-          { 
-           alert('アップロードするファイルを選択してください。'); 
-           fieldObj.focus(); 
-           return false;
-          } 
-        alert(fldLangVal[i] +' は入力必須です。'); 
-                  fieldObj.focus();
-                  return false;
-        }  else if(fieldObj.nodeName=='SELECT') {
-                 if(fieldObj.options[fieldObj.selectedIndex].value=='-None-') {
-          alert(fldLangVal[i] +' は入力必須です。'); 
-          fieldObj.focus();
+
+      function numbersValue(){
+        const value = document.getElementById('Phone').value;
+        const regex = /^[0-9\-]*$/;
+
+        if (!regex.test(value)) {
+          alert('電話番号記入欄に全角数字、または文字が入力されています。もう一度入力してください。');
           return false;
-           }
-        } else if(fieldObj.type =='checkbox'){
-            if(fieldObj.checked == false){
-          alert('Please accept  '+fldLangVal[i]);
-          fieldObj.focus();
-          return false;
-           } 
-         } 
-         try {
-             if(fieldObj.name == 'Last Name') {
-          name = fieldObj.value;
-               }
-        } catch (e) {}
+        } else {
+          return true;
+        }
+      }
+
+      function checkMandatory5103321000002008018(){
+        var mndFileds = new Array( 'Company', 'Last Name', 'Email', 'Phone', 'Website', 'LEADCF1', 'LEADCF2' );
+        var fldLangVal = new Array( '\u6CD5\u4EBA\u540D\u30FB\u56E3\u4F53\u540D', '\u3054\u62C5\u5F53\u8005\u3055\u307E\u6C0F\u540D', '\u30E1\u30FC\u30EB', '\u96FB\u8A71\u756A\u53F7', '\u8CB4\u793E\u306EWeb\u30B5\u30A4\u30C8URL', '\u304A\u554F\u3044\u5408\u308F\u305B\u306E\u5185\u5BB9\u3092\u9078\u629E\u3057\u3066\u304F\u3060\u3055\u3044', '\u30E1\u30FC\u30EB\u78BA\u8A8D\u7528' );
+        for( i = 0; i < mndFileds.length; i++ ){
+          var fieldObj = document.forms[ 'WebToLeads5103321000002008018' ][ mndFileds[ i ]];
+          if( fieldObj ){
+            if((( fieldObj.value ).replace( /^\s+|\s+$/g,'' )).length == 0 ){
+              if( fieldObj.type == 'file' ){
+                alert( 'アップロードするファイルを選択してください。' );
+                fieldObj.focus();
+                return false;
+              }
+              alert( fldLangVal[ i ] + ' は入力必須です。' );
+              fieldObj.focus();
+              return false;
+            }
+            else if( fieldObj.nodeName == 'SELECT' ){
+              if( fieldObj.options[fieldObj.selectedIndex].value == '-None-' ){
+                alert( fldLangVal[ i ] + ' は入力必須です。' );
+                fieldObj.focus();
+                return false;
+              }
+            }
+            else if( fieldObj.type == 'checkbox' ){
+              if( fieldObj.checked == false ){
+                alert( 'Please accept  ' + fldLangVal[ i ]);
+                fieldObj.focus();
+                return false;
+              }
+            }
+            try{
+              if( fieldObj.name == 'Last Name' ){
+                name = fieldObj.value;
+              }
+            }
+            catch( e ){}
           }
-      }
-      if(!validateEmail5103321000002008018()){return false;}
-      
-    var urlparams = new URLSearchParams( window.location.search);
-    if(urlparams.has('service') && (urlparams.get('service')==='smarturl')){
-      var webform = document.getElementById('webform5103321000002008018');
-       var service =  urlparams.get('service'); 
-      var smarturlfield = document.createElement('input');
-      smarturlfield.setAttribute('type','hidden');
-      smarturlfield.setAttribute('value',service);
-      smarturlfield.setAttribute('name','service');
-      webform.appendChild(smarturlfield); 
-    }
-  
-      document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
-    return true;
-    }
-  
-  $(document).ready(function () {
-    $('#webform5103321000002008018').submit(function (e) {
-      var ismandatory = checkMandatory5103321000002008018();
-      var checkEmail = validateEmail();
-      e.preventDefault();
-      if(ismandatory && checkEmail){
-         if(typeof _wfa_track != 'undefined' && _wfa_track.wfa_submit){ _wfa_track.wfa_submit(e); }
-        var formData = new FormData(this);
-        $.ajax({
-          url :'https://crm.zoho.com/crm/WebToLeadForm',
-          type : 'POST',
-          data : formData,
-          cache: false,
-          contentType: false,
-          processData: false,
-          success: function(data) {
-              var splashinfodom = document.getElementById('wf_splash_info');
-              splashinfodom.innerText=data.actionvalue;
-              var splashdom = document.getElementById('wf_splash');
-              document.getElementById('webform5103321000002008018').reset.click();
-              splashdom.style.display = '';
-              setTimeout(function(){
-                splashdom.style.display = 'none';
-              },5000);
-          document.querySelector('.crmWebToEntityForm .formsubmit').removeAttribute('disabled');
-          },
-          error: function(data){
-            alert('an error occurred');
-          } 
-        });
-      }
-    });
-  });
-  function tooltipShow5103321000002008018(el){
-    var tooltip = el.nextElementSibling;
-    var tooltipDisplay = tooltip.style.display;
-    if(tooltipDisplay == 'none'){
-      var allTooltip = document.getElementsByClassName('zcwf_tooltip_over');
-      for(i=0; i<allTooltip.length; i++){
-        allTooltip[i].style.display='none';
-      }
-      tooltip.style.display = 'block';
-    }else{
-      tooltip.style.display='none';
-    }
-  }
+        }
 
-  </script>
+        if( !validateEmail5103321000002008018()){
+          return false;
+        }
+
+
+        if( !validateEmail()){
+          return false;
+        }
+
+        if(!numbersValue()){
+          return false
+        }
+        
+        var urlparams = new URLSearchParams( window.location.search );
+        if( urlparams.has( 'service' ) && ( urlparams.get( 'service' ) === 'smarturl' )){
+          var webform = document.getElementById( 'webform5103321000002008018' );
+          var service = urlparams.get( 'service' );
+          var smarturlfield = document.createElement( 'input' );
+          smarturlfield.setAttribute( 'type', 'hidden' );
+          smarturlfield.setAttribute( 'value', service );
+          smarturlfield.setAttribute( 'name', 'service' );
+          webform.appendChild( smarturlfield );
+        }
+        document.querySelector( '.crmWebToEntityForm .formsubmit' ).setAttribute( 'disabled', true );
+      }
+      function tooltipShow5103321000002008018( el ){
+        var tooltip = el.nextElementSibling;
+        var tooltipDisplay = tooltip.style.display;
+        if( tooltipDisplay == 'none' ){
+          var allTooltip = document.getElementsByClassName( 'zcwf_tooltip_over' );
+          for( i = 0; i < allTooltip.length; i++ ){
+            allTooltip[ i ].style.display = 'none';
+          }
+          tooltip.style.display = 'block';
+        }
+        else{
+          tooltip.style.display = 'none';
+        }
+      }
+    </script>
     <!-- Do not remove this --- Analytics Tracking code starts -->
-     <script id='wf_anal' src='https://crm.zohopublic.com/crm/WebFormAnalyticsServeServlet?rid=f119f85783790cedb44ad2f688a922e14d9d9406650c5fba9ad9e4d3c0e0cd0ed828bd496725face22e6d4a7d248e546gid7470a50837af3e992761a8bff11e00764959ce55d99b161786c60e584e7bc9abgid4f8f53320a072234d42f8280ab82a9da025ab810c9a7d0f9e69585ae7b51e528gid7f2419e8056ead9a42e90c6ab1aa055221f816aa31fdf8d10bcbf2fe4f5a0433&tw=c1fa5992c11a34016421b34f10ee038b8b49dfa28457a0d13b35fe957e1595b1'></script><!-- Do not remove this --- Analytics Tracking code ends. -->
-     
+    <script id='wf_anal' src='https://crm.zohopublic.com/crm/WebFormAnalyticsServeServlet?rid=4d7a8ee1e33d5115515551e43f94c7ef77e9e238a34731d62756049ee311e608311a8ecba82e6ee7785fec8510120d74gid03d050b5cbc93b96b369368d750c8ae4b6253d625afa8ded93082aeb1f9f5981gid7b03031976531ebb872f691b1831f042861478b88785af84acf00d1aa0e65e91gid5c093b60e0bf258d5ae5d62d4972e600528066ff66c670bdf94a5b8c16f23ff8&tw=6605bd5c5fff724402416d1733dc8f506e74a77cf4707174148e7247c925f009'></script>
+    <!-- Do not remove this --- Analytics Tracking code ends. -->
   </form>
 </div>
 
