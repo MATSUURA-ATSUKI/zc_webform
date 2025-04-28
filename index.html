@@ -15,7 +15,9 @@
    - Code lines with comments Do not remove this code are required for the form to work properly, make sure that you do not remove these lines of code. 
    - The Mandatory check script can modified as to suit your business needs. 
    - It is important that you test the modified form before going live.-->
-   <div class="zcwf_topbackground" style= 'max-width: 800px;'></div>
+
+   <!--  -->
+   <!-- <div class="zcwf_topbackground" style= 'max-width: 800px;'></div> -->
 
    <div id='crmWebToEntityForm' class='zcwf_lblLeft crmWebToEntityForm' style= 'color: &#x23;000000;max-width: 800px;'>
        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
@@ -105,17 +107,23 @@
        </p>
      </div>
    
-     <form id = 'webform5103321000002008018' action = 'https://crm.zoho.com/crm/WebToLeadForm' name = WebToLeads5103321000002008018 method = 'POST' onSubmit = 'javascript:document.charset="UTF-8"; return checkMandatory5103321000002008018()' accept-charset = 'UTF-8'>
-      <input type = 'text' style = 'display:none;' name = 'xnQsjsdp' value = 'd1cf9d28cd27ef60ffda5e2cf03f96bfd1cb429e09264509e1a0297fcfc8cd95'></input>
-      <input type = 'hidden' name = 'zc_gad' id = 'zc_gad' value = ''></input>
-      <input type = 'text' style = 'display:none;' name = 'xmIwtLD' value = 'defbd69115d60994b9db094e75a3594bf8aa96abca237c6c021002618c08d963d939d2666d790cb5f1da03e295ba03a2'></input>
-      <input type = 'text' style = 'display:none;' name = 'actionType' value = 'TGVhZHM='></input>
-      <input type = 'text' style = 'display:none;' name = 'returnURL' value = 'https&#x3a;&#x2f;&#x2f;test.hospi.ai&#x2f;'></input>
-      <!-- Do not remove this code. -->
-     <style>
-   
+     <form id='webform5103321000002008018' action='https://crm.zoho.com/crm/WebToLeadForm' name=WebToLeads5103321000002008018 method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatory5103321000002008018()' accept-charset='UTF-8'>
+      <input type='text' style='display:none;' name='xnQsjsdp' value='c414d7a80142d33ee7e2bf084ed1831c4f061590fdb0aba0b88b6d11f4513270'></input> 
+      <input type='hidden' name='zc_gad' id='zc_gad' value=''></input>
+      <input type='text' style='display:none;' name='xmIwtLD' value='6f8eab62dfff23524081a5c6772c793c17229252beac9a035ee8cddbc7bab507ab61705c027a93212f1a4d0955c2706f'></input> 
+      <input type='text'  style='display:none;' name='actionType' value='TGVhZHM='></input>
+      <input type='text' style='display:none;' name='returnURL' value='https&#x3a;&#x2f;&#x2f;test.hospi.ai&#x2f;transmission-completed&#x2f;' > </input>
+        <!-- Do not remove this code. -->
+
+   <style>
      html,body{
        margin: 0px;
+     }
+
+     hr {
+      border: none;            /* デフォルトの線を消す */
+      height: 1px;              /* 線の太さ */
+      background-color: rgb(192, 198, 204); 
      }
      
      
@@ -185,6 +193,17 @@
          padding:2px 8px 0px;
          border-top-left-radius:6px;
          border-top-right-radius:6px;
+       }
+
+       .zcwf_checkbox_Required{
+        font-size:12px;
+        background: #cf566b;
+        color:white;
+        width:fit-content;
+        height:fit-content;
+        padding:2px 8px 2px;
+        border-radius:6px;
+        margin-top:20px;
        }
        
        .zcwf_NotRequired{
@@ -266,6 +285,37 @@
          position: relative;
          margin-top: 5px;
        }
+
+       .first_zf{
+        display:flex;
+        margin-bottom:20px;
+       }
+
+       .zcwf_ckbox input[type=checkbox]{
+        width:30px;
+        height:30px;
+        appearance: none;
+        border:1px solid rgb(192, 198, 204);
+       }
+       .zcwf_ckbox input[type=checkbox]:checked{
+        appearance:auto;
+       }
+
+
+
+       .zcwf_ckbox{
+        margin-left:80px;
+        display:flex;
+        width:100px;
+        margin-top:40px;
+      }
+
+       .zcwf_ckbox_text{
+        font-size:16px;
+        line-height:40px;
+       }
+
+       .first_zf
        
        .zcwf_lblLeft .zcwf_privacy{padding: 6px;}
        
@@ -337,7 +387,7 @@
        }
        
        .zcwf_lblLeft .zcwf_button{
-         font-size: 16px;
+         font-size: 18px;
          color: #213743; 
          border: 1px solid #c0c6cc;
          padding: 3px 9px;
@@ -345,6 +395,7 @@
          cursor: pointer;
          width:200px;
          height:50px;
+         font-weight:500;
          /* max-width: 180px; */
          background:#dcdcdc;
          /* overflow: hidden; */
@@ -407,6 +458,22 @@
      <div class='zcwf_text' style ='margin-bottom:20px;'>［４］　カタログや見積書等のご郵送は対応しておりませんので何卒ご了承くださいませ。</div>
      <hr>
    
+    <div class='zcwf_row'>
+      <div class='zcwf_col_lab' style='font-size:16px; font-family: Arial;'>
+        <label for='LEADCF258'>初めての資料請求・お問い合わせですか？<span style='color:red;'>*</span></label>
+      </div>
+      
+      <div class='zcwf_col_fld first_zf'>
+        <div class="zcwf_checkbox_Required">必須</div>
+        <div class='zcwf_ckbox'>
+          <input type='checkbox' aria-checked='false'  id='LEADCF258' aria-required='true' aria-label='LEADCF258' name='LEADCF258' aria-valuemax='3' maxlength='3' onclick='addAriaChecked5103321000002008018()'></input><div class="zcwf_ckbox_text">はい</div>
+        </div>
+        <div class='zcwf_ckbox'>
+          <input type='checkbox' id="checkboxFalse"></input><div class="zcwf_ckbox_text">いいえ</div>
+        </div>
+        <div class='zcwf_col_help'></div>
+      </div>
+    </div>
    
      <div class='zcwf_row'>
        <div class='zcwf_col_lab' style='font-size:16px; font-family: Arial;'>
@@ -519,6 +586,23 @@
     </div>
 
     <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', function() {
+                if (this.checked) {
+                    checkboxes.forEach(otherCheckbox => {
+                        if (otherCheckbox !== this) {
+                            otherCheckbox.checked = false;
+                        }
+                    });
+                }
+            });
+        });
+      });
+
+          
 
 
       document.getElementById('Phone').addEventListener('blur', function() {
@@ -572,6 +656,19 @@
     
    
     <script>
+      function isAnyCheckboxChecked(){
+        const checkbox1 = document.getElementById("LEADCF258");
+        const checkbox2 = document.getElementById("checkboxFalse");
+        if(!checkbox1.checked){
+          if(!checkbox2.checked){
+            alert("フォーム項目１つ目「初めての資料請求・お問い合わせですか？」にお答えください。");
+            return false;
+          }
+        }
+        return true;
+      }
+
+
       function addAriaSelected5103321000002008018(){
         var optionElem = event.target;
         var previousSelectedOption = optionElem.querySelector( '[aria-selected=true]' );
@@ -626,7 +723,7 @@
       }
 
       function checkMandatory5103321000002008018(){
-        var mndFileds = new Array( 'Company', 'Last Name', 'Email', 'Phone', 'Website', 'LEADCF1', 'LEADCF2' );
+        var mndFileds = new Array( 'Company', 'Last Name', 'Email', 'Phone', 'Website', 'LEADCF1', 'LEADCF2');
         var fldLangVal = new Array( '\u6CD5\u4EBA\u540D\u30FB\u56E3\u4F53\u540D', '\u3054\u62C5\u5F53\u8005\u3055\u307E\u6C0F\u540D', '\u30E1\u30FC\u30EB', '\u96FB\u8A71\u756A\u53F7', '\u8CB4\u793E\u306EWeb\u30B5\u30A4\u30C8URL', '\u304A\u554F\u3044\u5408\u308F\u305B\u306E\u5185\u5BB9\u3092\u9078\u629E\u3057\u3066\u304F\u3060\u3055\u3044', '\u30E1\u30FC\u30EB\u78BA\u8A8D\u7528' );
         for( i = 0; i < mndFileds.length; i++ ){
           var fieldObj = document.forms[ 'WebToLeads5103321000002008018' ][ mndFileds[ i ]];
@@ -662,6 +759,10 @@
             }
             catch( e ){}
           }
+        }
+
+        if(!isAnyCheckboxChecked()){
+          return false
         }
 
         if( !validateEmail5103321000002008018()){
@@ -704,10 +805,7 @@
         }
       }
     </script>
-    <!-- Do not remove this --- Analytics Tracking code starts -->
-    <script id='wf_anal' src='https://crm.zohopublic.com/crm/WebFormAnalyticsServeServlet?rid=4d7a8ee1e33d5115515551e43f94c7ef77e9e238a34731d62756049ee311e608311a8ecba82e6ee7785fec8510120d74gid03d050b5cbc93b96b369368d750c8ae4b6253d625afa8ded93082aeb1f9f5981gid7b03031976531ebb872f691b1831f042861478b88785af84acf00d1aa0e65e91gid5c093b60e0bf258d5ae5d62d4972e600528066ff66c670bdf94a5b8c16f23ff8&tw=6605bd5c5fff724402416d1733dc8f506e74a77cf4707174148e7247c925f009'></script>
-    <!-- Do not remove this --- Analytics Tracking code ends. -->
-  </form>
+    <!-- Do not remove this --- Analytics Tracking code starts --><script id='wf_anal' src='https://crm.zohopublic.com/crm/WebFormAnalyticsServeServlet?rid=33853ca35b95da6c2f5c2416cd8578a2c0b8760274d793d4892cbe84c9e06c60cfd6b05fd39b2e8e00b19246a072632bgid1a32514b69950894197e4b5e4e59c9dae7b48148d90ccebeae601e6fe5a9dd1fgid2808f9bc01c4da8b31a39c9799310bcb8ec542c7ec734e4635c39452f17f61d7gidee05d314b803d5c01351a2fb3e712b5748db811e01edeec5f8c469309b9a4ea2&tw=52a21de39159cde5c10d01b5ea4e240f3a87de7c9b44a6cab3c553508a46e7d5'></script><!-- Do not remove this --- Analytics Tracking code ends. --></form>
 </div>
 
 
